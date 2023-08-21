@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import axios from "axios";
+import Input from "./Input";
 
 function App() {
   const [showNumbers, setShowNumbers] = useState(false);
@@ -57,106 +58,16 @@ function App() {
              <div className="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 text-left">
                <form id="login-form" onSubmit={numberHandler} className="rounded bg-white shadow py-5 px-4">
                  <h3 className="text-dark fw-bolder fs-4 mb-2">Numbers:</h3>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number1"
-                     className="form-control"
-                     id="floatingInput1"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput1">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number2"
-                     className="form-control"
-                     id="floatingInput2"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput2">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number3"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number4"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number5"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number6"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number7"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number8"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number9"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
-                 <div className="form-floating mb-3">
-                   <input
-                     type="number"
-                     name="number10"
-                     className="form-control"
-                     id="floatingInput3"
-                     placeholder="number"
-                   />
-                   <label htmlFor="floatingInput3">Number</label>
-                 </div>
+                 <Input number={1} />
+                 <Input number={2} />
+                 <Input number={3} />
+                 <Input number={4} />
+                 <Input number={5} />
+                 <Input number={6} />
+                 <Input number={7} />
+                 <Input number={8} />
+                 <Input number={9} />
+                 <Input number={10} />
                  <button
                    type="submit"
                    className="btn btn-danger submit_btn w-100 my-4"
