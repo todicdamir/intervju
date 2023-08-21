@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  justify-content: center;
+}
+
+.number-list {
+  list-style: none;
+  padding: 0;
+}
+
+.number-list li {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.number-list li.prime {
+  background-color: #d9534f; 
+  font-weight: bold;
+}
+
+.back-button{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.input-form{
+  display:flex;
+  width:100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
